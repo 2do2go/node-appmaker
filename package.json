@@ -1,6 +1,6 @@
 {
   "name": "appmaker",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "helper script for creating production build of web application (compile less to css, etc)",
   "author": "Oleg Korobenko <oleg.korobenko@gmail.com>",
   "repository": {

@@ -13,8 +13,8 @@ npm install appmaker
 
 ## Usage
 
-create your own `makeApp.js` file at root directory of your project and use
-helper methods within him, e.g.
+create your own `makeApp.js` build script (e.g. at root directory of your
+project), define your `actions` and use helper methods within them, e.g.
 
 ```js
 
@@ -28,7 +28,7 @@ actions.build = function() {
 	actions.clean();
 	actions.compileLess();
 	actions.requirejsOptimize();
-}
+};
 
 actions.compileLess = function() {
 	appMaker.compileLess({files: 'static/css/*.less'});
@@ -47,13 +47,13 @@ actions.clean = function() {
 	appMaker.clean(
 		['static/scripts', 'static/js/sharedmodules/*.js', 'static/css/*.css'],
 		'-Rf'
-	);	
-}
+	);
+};
 
 appMaker.process(actions);
 
 
 ```
 
-after that you can call `./makeApp.js` (don`t forget to make him executable via
+after that you can call `./makeApp.js` (don't forget to make him executable via
 `chmod +rx`) to see available commands
