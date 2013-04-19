@@ -14,7 +14,7 @@ npm install appmaker
 ## Usage
 
 create your own `makeApp.js` build script (e.g. at root directory of your
-project), define your `actions` and use helper methods within them, e.g.
+project), define your `tasks` and use helper methods within them, e.g.
 
 ```js
 
@@ -23,18 +23,18 @@ project), define your `actions` and use helper methods within them, e.g.
 var	appMaker = require('./lib/2do2go/node_utils/appMaker'),
 	path = require('path');
 
-var actions = {};
-actions.build = function() {
-	actions.clean();
-	actions.compileLess();
-	actions.requirejsOptimize();
+var tasks = {};
+tasks.build = function() {
+	tasks.clean();
+	tasks.compileLess();
+	tasks.requirejsOptimize();
 };
 
-actions.compileLess = function() {
+tasks.compileLess = function() {
 	appMaker.compileLess({files: 'static/css/*.less'});
 };
 
-actions.requirejsOptimize = function() {
+tasks.requirejsOptimize = function() {
 	appMaker.requirejsOptimize({
 		modulesDir: 'static/js/views/',
 		baseUrl: 'static/js/',
@@ -43,14 +43,14 @@ actions.requirejsOptimize = function() {
 	});
 };
 
-actions.clean = function() {
+tasks.clean = function() {
 	appMaker.clean(
 		['static/scripts', 'static/js/sharedmodules/*.js', 'static/css/*.css'],
 		'-Rf'
 	);
 };
 
-appMaker.process(actions);
+appMaker.process(tasks);
 
 
 ```
