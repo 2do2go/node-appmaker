@@ -1,6 +1,6 @@
 {
   "name": "appmaker",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "helper script for creating production build of web application (compile less to css, etc)",
   "author": "Oleg Korobenko <oleg.korobenko@gmail.com>",
   "repository": {
@@ -12,7 +12,7 @@
   ],
   "main": "./lib/appMaker",
   "dependencies" : {
-    "underscore": "1.4.3",
+    "underscore": ">=1.1.5",
     "shelljs": "0.1.2"
   }
 }
