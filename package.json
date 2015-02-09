@@ -1,6 +1,6 @@
 {
   "name": "appmaker",
-  "version": "0.2.16",
+  "version": "0.2.17",
   "description": "helper script for creating production build of web application (compile less to css, etc)",
   "author": "2do2go team <dev.2do2go@gmail.com>",
   "repository": {
