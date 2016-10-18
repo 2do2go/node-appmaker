@@ -1,6 +1,6 @@
 {
   "name": "appmaker",
-  "version": "0.2.18",
+  "version": "0.2.19",
   "description": "helper script for creating production build of web application (compile less to css, etc)",
   "author": "2do2go team <dev.2do2go@gmail.com>",
   "repository": {
@@ -8,10 +8,14 @@
     "url": "git://github.com/2do2go/node-appmaker"
   },
   "keywords": [
-    "build", "make", "script", "less", "requirejs"
+    "build",
+    "make",
+    "script",
+    "less",
+    "requirejs"
   ],
   "main": "./lib/appMaker",
-  "dependencies" : {
+  "dependencies": {
     "underscore": ">=1.1.5",
     "shelljs": "0.1.2"
   },
@@ -21,4 +25,3 @@
     "uglify-js": "2.4.13"
   }
 }
-
