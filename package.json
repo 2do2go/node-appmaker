@@ -20,8 +20,8 @@
     "shelljs": "0.1.2"
   },
   "devDependencies": {
+    "requirejs": "^2.3.6",
     "requirejs-common-wrap-middleware": "0.1.2",
-    "requirejs": "2.1.5",
     "uglify-js": "2.4.13"
   }
 }
